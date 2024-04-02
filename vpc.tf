@@ -1,7 +1,7 @@
 # Define provider (AWS in this case)
-provider "aws" {
-  region = "us-east-1"  # Update with your desired region
-}
+#provider "aws" {
+#  region = "us-east-1"  # Update with your desired region
+#}
 
 # Create VPC
 resource "aws_vpc" "my_vpc" {
