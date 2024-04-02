@@ -14,7 +14,6 @@ pipeline {
                 sh "cd /var/lib/jenkins/workspace/project-1"
                 sh "sh jenkins.sh run"
                 sh "sh terraform.sh run"
-                sh "apt install awscli -y"
                 sh "terraform init"
                 sh "terraform plan"
                 }
