@@ -12,7 +12,7 @@ pipeline {
         stage('plan') {
             steps {
                 sh "cd /var/lib/jenkins/workspace/project-1"
-                sh "sh jenkins.sh run"
+                sh "sh docker.sh run"
                 sh "sh terraform.sh run"
                 sh "terraform init"
                 sh "terraform plan"
